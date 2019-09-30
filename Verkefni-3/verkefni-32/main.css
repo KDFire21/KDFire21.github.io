@@ -47,17 +47,17 @@ h1 {
     display: grid;
     grid-gap: 1em;
     grid-template:
-        "topnav"
-        "haus"
-        "content"
-        "foot"
+    "haus"
+    "topnav"
+    "content"
+    "foot"
 }
 .container {
     display: grid;
     grid-gap: 2em;
     grid-template-areas:
-        "as1 art1 as2";
-    grid-template-columns: 1fr 3fr 1fr
+        "art1 as1  as2";
+    grid-template-columns: 3fr 1fr 1fr
 }
 .topmenu , .footmenu {
     display: flex;

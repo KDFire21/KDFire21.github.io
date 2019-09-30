@@ -1,13 +1,25 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
     max-width: 60em;
     margin: 1em auto;
+    font-family: 'Quattrocento', serif;
+    background-color: black;
+    color: rgb(173, 0, 173);
 }
 
+h1, h2,h3,h4 {
+    font-family: 'Amatic SC', cursive;
+}
+header h1 {
+    font-size:6em;
+}
 h1 {
-    font-size: 3em
+    font-size:4em;
+}
+h3 {
+    font-size:1.8em;
 }
 
 .main {
@@ -16,7 +28,7 @@ h1 {
     grid-template-areas:
         "art1 as1 as2";
     grid-template-columns: 1fr 3fr 1fr;
-    padding: 0 2em
+    padding: 0 2em;
 }
 
 .haus {
@@ -31,7 +43,7 @@ h1 {
 .foot {
     grid-area: foot;
     display: grid;
-    grid-template-columns: repeat(4, 25%)
+    grid-template-columns: repeat(4, 25%);
 }
 .as1 {
     grid-area: as1;
@@ -57,7 +69,7 @@ h1 {
     grid-gap: 2em;
     grid-template-areas:
         "as1 art1 as2";
-    grid-template-columns: 1fr 3fr 1fr
+    grid-template-columns: 1fr 3fr 1fr;
 }
 .topmenu , .footmenu {
     display: flex;
@@ -65,11 +77,11 @@ h1 {
     justify-content: space-around;
     margin: 0;
     padding: 1em 0;
-    background-color: #ddd
+    background-color: darkblue;
 }
 .topmenu li, .footmenu li {
-    list-style-type: none
+    list-style-type: none;
 }
 .haus, .main, .art1, .as1, .as2 {
-    border:1px dotted blue;
+    border:1px dotted rgb(151, 0, 81);
 }
