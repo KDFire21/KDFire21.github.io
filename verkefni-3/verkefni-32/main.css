@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box
+}
+body {
+    max-width: 60em;
+    margin: 1em auto;
+}
+
+h1 {
+    font-size: 3em
+}
+
+.main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+        "art1 as1 as2";
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0 2em
+}
+
+.haus {
+    grid-area: haus;
+}
+.topnav {
+    grid-area: topnav;
+}
+.content {
+    grid-area: content;
+}
+.foot {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: repeat(4, 25%)
+}
+.as1 {
+    grid-area: as1;
+    
+}
+.as2 {
+    grid-area: as2;
+}
+.art1 {
+    grid-area: art1;
+}
+.content {
+    display: grid;
+    grid-gap: 1em;
+    grid-template:
+    "haus"
+    "topnav"
+    "content"
+    "foot"
+}
+.container {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+        "art1 as1  as2";
+    grid-template-columns: 3fr 1fr 1fr
+}
+.topmenu , .footmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0;
+    background-color: #ddd
+}
+.topmenu li, .footmenu li {
+    list-style-type: none
+}
+.haus, .main, .art1, .as1, .as2 {
+    border:1px dotted blue;
+}
