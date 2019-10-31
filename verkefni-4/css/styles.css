@@ -1,0 +1,47 @@
+* { box-sizing: border-box }
+
+body {
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
+    font-family: 'Turret Road', cursive;
+    background-color: rgb(204, 0, 194);
+    color: hsl(295, 100%, 85%)
+    
+}
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+a,
+.headcolor, .footcolor {
+    color: hsl(295, 100%, 85%)
+}
+
+.bgcolor {
+    background-color: rgb(167, 32, 194)
+}
+
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em
+}
