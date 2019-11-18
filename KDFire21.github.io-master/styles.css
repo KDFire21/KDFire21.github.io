@@ -6,7 +6,7 @@ body {
     font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
     font-family: 'Turret Road', cursive;
     background-color: black;
-    color: hsl(295, 100%, 41%)
+    color:hsl(295, 100%, 31%);
     
 }
 h1 {
@@ -16,11 +16,11 @@ h1 {
 
 a,
 .headcolor, .footcolor {
-    color: hsl(0, 0%, 0%)
+    color: hsl(295, 100%, 21%);
 }
 
 .bgcolor {
-    background-color: rgb(142, 0, 170)
+    background-color: hsl(295, 98%, 25%);
 }
 
 .container {
@@ -44,4 +44,20 @@ a,
 }
 .gap-4 {
     grid-gap: 4em
+}
+
+.grid p {
+    grid-area: texti;
+}
+.grid iframe {
+    grid-area: video;
+}
+
+.grid img {
+    grid-area: image;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "texti video image";
 }
