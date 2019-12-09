@@ -1,0 +1,108 @@
+* { box-sizing: border-box }
+
+body {
+    margin: 0; 
+    /* font-family: ;*/
+    font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
+    font-family: 'Turret Road', cursive;
+    background-color: rgb(0, 0, 209);
+    color:black; 
+}
+h1 {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
+
+a,
+.headcolor, .footcolor {
+    color: white;
+}
+
+.verkefni {
+    text-align: center;
+}
+
+.bgcolor {
+    width:100%;
+    background-color: rgb(255, 203, 173);
+}
+
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img {
+    max-width: 100%;
+    height:auto;
+}
+.container {
+    margin: 1em;
+}
+/*
+.image {
+    max-width: 40em;
+}
+
+.image2 {
+    max-width: 30em;
+}
+.gap-4 {
+    grid-gap: 4em
+}
+
+.grid p {
+    grid-area: texti;
+}
+.grid iframe {
+    grid-area: video;
+}
+
+.grid img {
+    grid-area: image;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "texti video image";
+}
+*/
+.gluggi {
+    width: 300px;
+    height: 158px;
+}
+
+@media screen and (min-width:48em){
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gap-4 {
+        grid-gap: 4em
+    }
+    .gluggi {
+        width: 530px;
+        height: 315px;
+    }
+}
+@media screen and (min-width:48em){
+    .container {
+        max-width: 60em; /*960px = fartölvur*/
+        margin: 0 auto; /* top+bottom og left+right */
+        padding: 0;
+    }
+    h1 {
+        font-size: 4em;
+    }
+}
