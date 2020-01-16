@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;  
+    max-width: 50em;
+    border: 2px solid darkred;
+    margin: 1em auto;
+    padding: 1em;
+    color: red
+}
+  
+h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    
+    color: red
+  }
+        
+h2 {
+    color: red;
+}
+              
+h3 {
+    color: red;
+}
+                
+h4 {
+    color: red;
+}
+              
+h5 {
+    color: red;
+}
+
+h6 {
+    color: red;
+}
+.lennon p{
+    color:darkgoldenrod;
+    font-style: italic;
+}
+.lennon h2 {
+    color:yellow;
+}
